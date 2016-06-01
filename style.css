@@ -1,0 +1,215 @@
+
+a{
+	text-decoration: none;
+}
+/* unvisited link */
+a:link {
+    color: #4B4B4B;
+}
+
+/* visited link */
+a:visited {
+    color: #4B4B4B;
+}
+
+/* mouse over link */
+a:hover {
+    color: #000000;
+}
+
+td{
+	font-size:10pt;
+	width:250pt;	
+}
+
+body{
+	font-family: Arial, Helvetica, serif;
+}
+
+
+li{
+	margin: 2pt 0pt 2pt 0pt;
+}
+
+h4{
+	margin-top:10pt;
+	margin-bottom:10pt;
+}
+
+.top{
+	position:fixed;
+	width:98%;
+	height: 10px;
+	margin-top:-50pt;
+}
+
+.navbarBar{
+	position:fixed;
+	width:170pt;
+	float:left;
+	margin: -50pt 20pt 10pt 0pt;
+	
+}
+
+.pict{
+	float:right;
+	margin-top:-30pt;
+
+	}
+
+
+.info{
+	margin-left: 10pt;
+}
+
+.navbar{
+	background-color:#DBDBDB;	
+	 box-shadow: 5px 5px 7px #888888;
+	border-radius:0px 10px 10px 0px;
+	float:left;
+	
+	display:block;
+	font-size: 14pt;
+	font-family: Arial, serif;
+
+	margin: 30pt 20pt 10pt -5pt;
+	width:80pt;
+	height:90pt;
+	padding:5pt 20pt 5pt 20pt;
+	
+}
+
+
+
+.calendarTab{
+	margin-top:10pt;
+}
+
+.projectTab{
+	margin-top:10pt;
+}
+
+.resumeTab{
+	margin-top:10pt;
+}
+
+
+div.calendarTab :hover{
+	margin-left:20pt;
+}
+
+div.projectTab :hover{
+	margin-left:20pt;
+	
+}
+
+div.resumeTab :hover{
+	margin-left:20pt;
+	
+}
+
+.calendarVisited{
+		margin-top:10pt;
+
+	margin-left:20pt;
+	color:red;
+}
+
+.projectVisited{
+	margin-top:10pt;
+	margin-left:20pt;
+}
+
+.resumeVisited{
+	margin-top:10pt;
+	margin-left:20pt;
+	color:red;
+}
+
+
+
+.content{
+	margin:60pt 150pt 20pt 190pt;
+	line-height:1.5;
+}
+
+.loading{
+	position:fixed;
+	margin-left: 470pt;
+	margin-top: 200pt;
+}
+
+.name {
+	font-family: Arial, Helvetica, serif;
+	font-size:22pt;
+	color:red;
+}
+
+
+#title{
+	font-size:16pt;
+	font-weight:bold;
+	margin-left:-20pt;
+	margin-bottom:10pt;
+	margin-top:10pt;
+}
+
+#subtitle1{
+	float:left;
+	margin-left:-15pt;
+	font-weight:bold;
+}
+
+#subtitle2{
+	margin: 5pt 0pt 5pt -10pt;
+	font-style:italic;
+}
+
+
+
+#date{
+	float:right;
+	font-style:italic;
+}
+
+#resumeBody{
+	width:80%;
+}
+
+#left{
+	margin-top:-10pt;
+	
+	width:50%;
+	float:right;
+	margin-right:10pt;
+}
+
+#right{
+	margin-left:100pt;
+}
+
+
+#n{
+	color:red;
+}
+
+
+
+.dummy{
+	float:normal;
+}
+
+.resume{
+	font-size:10pt;
+	width:70%;
+	line-height:150%;
+	margin-left:20pt;
+	
+}
+
+.calendar{
+	position: absolute;
+    
+    width: 100px;
+    height: 100px;
+}
