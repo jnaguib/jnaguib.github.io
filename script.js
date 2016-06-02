@@ -26,4 +26,8 @@ function init(){
 	$("#DashboardClick").click(function(){
 		$("#Dashboard").slideToggle(animationSpeed);
 	});
+
+	$("#threeD").click(function(){
+		$("#threeDchat").slideToggle(animationSpeed);
+	})
 }

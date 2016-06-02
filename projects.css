@@ -1,27 +1,15 @@
-#RobotCar{
+.projectWork{
     display:none;
+    margin-left: 15px;
 }
 
-#TwitterAnalyzer{
-    display:none;
+.projectLink{
+    color:blue;
 }
 
-#fruitNinja{
-    display:none;
-
+.projectLink:visited{
+    color:blue;
 }
-
-#HalaSeeHalaDo{
-    display:none;
-
-}
-
-#HalasKnowledgeBase{
-    display:none;
-
-}
-
-#Dashboard{
-    display:none;
-
+.projectLink:hover{
+    color:red;
 }
