@@ -23,7 +23,8 @@ td{
 
 body{
 	font-family: Arial, Helvetica, serif;
-	background-image: url("bg.png");
+	background-color: #f5f5ee;
+	/*background-image: url("bg.png");*/
 
 }
 
@@ -35,6 +36,10 @@ li{
 h4{
 	margin-top:10pt;
 	margin-bottom:10pt;
+}
+
+h3{
+	margin-top:0pt;
 }
 
 .top{
@@ -71,12 +76,11 @@ h4{
 #pic{
 
 	/*display:block;*/
-
     border-radius: 50%;
     overflow: hidden;
 	float:right;
-	margin-top:-22%;
-	margin-right: 5%;
+	margin-top:-25%;
+	margin-right: -30%;
 }
 
 #pic img{
@@ -228,7 +232,6 @@ div.resumeTab :hover{
 }
 
 
-
 .dummy{
 	float:normal;
 }
@@ -246,4 +249,17 @@ div.resumeTab :hover{
 
     width: 100px;
     height: 100px;
+}
+
+
+.box{
+    margin-left: -30px;
+    padding-left: 40px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 7px #888888;
+
 }
