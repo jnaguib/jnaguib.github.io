@@ -1,8 +1,3 @@
-
-body{
-	background-image: url("bg.png");
-}
-
 a{
 	text-decoration: none;
 }
@@ -28,6 +23,8 @@ td{
 
 body{
 	font-family: Arial, Helvetica, serif;
+	background-image: url("bg.png");
+
 }
 
 
@@ -69,6 +66,21 @@ h4{
 	float:left;
 	margin: -30pt 0pt 10pt 0pt;
 
+}
+
+#pic{
+
+	/*display:block;*/
+
+    border-radius: 50%;
+    overflow: hidden;
+	float:right;
+	margin-top:-22%;
+	margin-right: 5%;
+}
+
+#pic img{
+	margin-left:-20px;
 }
 
 .pict{
