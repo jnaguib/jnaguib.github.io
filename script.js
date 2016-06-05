@@ -35,5 +35,13 @@ function init(){
 		$("#threeDchat").slideToggle(animationSpeed);
 	});
 
+	$("#bittorrentClick").click(function(){
+		$("#bittorrent").slideToggle(animationSpeed);
+	});
+
+	$("#videoCDNclick").click(function(){
+		$("#videoCDN").slideToggle(animationSpeed);
+	})
+
 
 }
