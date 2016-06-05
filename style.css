@@ -1,4 +1,8 @@
 
+body{
+	background-image: url("bg.png");
+}
+
 a{
 	text-decoration: none;
 }
@@ -40,9 +44,9 @@ h4{
 	position:fixed;
 	width:100%;
 	height: 50pt;
-	margin-top:-60pt;
-	margin-left:-10pt;
-	border-radius:0px 0px 30px 30px;
+	margin-top:-90pt;
+	margin-left:-6pt;
+	border-radius:0px 0px 25px 25px;
 	background: #ffffff;
      background-image: -webkit-linear-gradient(top, #ffffff, #304754);
      background-image: -moz-linear-gradient(top, #ffffff, #304754);
@@ -145,8 +149,9 @@ div.resumeTab :hover{
 
 
 .content{
-	margin:60pt 150pt 20pt 190pt;
+	margin:90pt 150pt 20pt 190pt;
 	line-height:1.5;
+	width: 60%;
 }
 
 .loading{

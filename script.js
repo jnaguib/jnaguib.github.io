@@ -3,6 +3,10 @@
 function init(){
 	var animationSpeed = 200;
 
+	$("#roomieClick").click(function(){
+		$("#roomie").slideToggle(animationSpeed);
+	});
+
 	$("#RobotCarClick").click(function(){
 		$("#RobotCar").slideToggle(animationSpeed);
 	});
@@ -29,5 +33,7 @@ function init(){
 
 	$("#threeD").click(function(){
 		$("#threeDchat").slideToggle(animationSpeed);
-	})
+	});
+
+
 }
