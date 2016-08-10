@@ -1,47 +1,20 @@
 
 
 function init(){
+
+	$(".box").click(function(){
+		if ($(this).hasClass("flip")){
+			$(this).removeClass('flip');
+		} else{
+			$(this).addClass('flip');
+		}
+	}
+	// , function(){
+	// 	$(this).removeClass('flip');
+	// }
+	)
+
 	var animationSpeed = 200;
-
-	$("#roomieClick").click(function(){
-		$("#roomie").slideToggle(animationSpeed);
-	});
-
-	$("#RobotCarClick").click(function(){
-		$("#RobotCar").slideToggle(animationSpeed);
-	});
-
-	$("#TwitterAnalyzerClick").click(function(){
-		$("#TwitterAnalyzer").slideToggle(animationSpeed);
-	});
-
-	$("#fruitNinjaClick").click(function(){
-		$("#fruitNinja").slideToggle(animationSpeed);
-	});
-
-	$("#HalaSeeHalaDoClick").click(function(){
-		$("#HalaSeeHalaDo").slideToggle(animationSpeed);
-	});
-
-	$("#HalasKnowledgeBaseClick").click(function(){
-		$("#HalasKnowledgeBase").slideToggle(animationSpeed);
-	});
-
-	$("#DashboardClick").click(function(){
-		$("#Dashboard").slideToggle(animationSpeed);
-	});
-
-	$("#threeD").click(function(){
-		$("#threeDchat").slideToggle(animationSpeed);
-	});
-
-	$("#bittorrentClick").click(function(){
-		$("#bittorrent").slideToggle(animationSpeed);
-	});
-
-	$("#videoCDNclick").click(function(){
-		$("#videoCDN").slideToggle(animationSpeed);
-	})
 
 
 }
