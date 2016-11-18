@@ -1,6 +1,284 @@
 <html>
+<<<<<<< HEAD
   <body>
     Hello there!
     I am John
   </body>
+=======
+    <head>
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="projects.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+
+
+    </head>
+
+    <title> John Mikhail </title>
+
+    <body onload="init()">
+
+        <ul class="top">
+    		<li>
+    			<a class="name" href="#aboutme"> John Mikhail </a>
+    		</li>
+
+            <li>
+                <a href="#projects"> Projects </a>
+            </li>
+
+            <li >
+                <a href="#resumeSect">Resume</a>
+            </li>
+
+            <li>
+                <a href="#calendarSect">Calendar</a>
+            </li>
+
+            <a id="pict" href="https://www.cmu.edu">
+                <img src="CMU.png">
+            </a>
+
+    	</ul>
+
+        <div class="content" id="aboutme">
+            <span class="anchor"></span>
+            <span class="center">
+                <h2> About Me </h2>
+
+            </span>
+
+            <div id="personal">
+                <div id="pic">
+                    <img src="Me.jpg" width="200" height="200">
+                </div>
+
+                <div id="contactDetails">
+                    <a href="mailto:john.m.naguib@gmil.com"><img src="mail.png" width="40" height="40" style="vertical-align:middle; margin-right:10px;"></a>
+                    <a href="https://eg.linkedin.com/pub/john-naguib/91/33b/76" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="50" height="40" alt="View John Naguib's LinkedIn profile" style="vertical-align:middle;" border="0"></span></a>
+                    <a href="https://github.com/jnaguib" ><img src="github.png" width="40" height="40" style="vertical-align:middle"></a>
+                </div>
+            </div>
+
+            <div id="me">
+                I am John Mikhail, a computer science graduate from Carnegie Mellon University, class of 2016 minoring in Robotics.
+            I love Robotics and trying to learn the most from one of the best Robotics institutes in the world, the RI in CMU.
+            I have worked with Hala (a bi-lingual roboceptionist in Carnegie Mellon University in Qatar) in my first two years in the university,
+            details about my work can be found in my Resume. I am also interested in HCI (Human-Computer interaction) and trying to find ways to
+            improve the ways we can interact with computers. I am also interested in Psychology and knowing how people interact which I believe can help us improve HRI (Human-Robot Interaction) and build better robots. <br>
+            I became interested in Webapp development after taking Webapp course and built some cool projects.
+
+            </div>
+        </div>
+
+
+        <div class="content" id="projects">
+            <span class="anchor"></span>
+            <span class="center">
+                <h2> Projects </h2>
+            </span>
+
+            <span class="center">
+                Click on a box for more info
+            </span>
+
+            <div id="projectBoxes">
+                <div class="box">
+                    <div class="front">
+                        <span class="projectType">Hackathon</span>
+                        <br>
+    					<p class="projectTitle" id="roomieClick"> <i> Roomie </i> </p>
+                    </div>
+                    <div class="back">
+        				<div class="projectWork" id="roomie">
+        					Hackathon in Carnegie Mellon University, a team of 4.
+        					Roomie finds you an apartment to sublet with other people based on your preferences.
+        					Roomie, with its rank algorithm, provides you with the best apartments based on your work location, budget,
+        					number of rooms and number of roommates.
+        					<br> Check it on <a class="projectLink" href="https://github.com/mahmoudalismail/Roomie">Github</a>
+        				</div>
+                    </div>
+    			</div>
+
+
+                <div class="box">
+                    <div class="front">
+                            <span class="projectType">Course</span>
+                            <br>
+        				    <p class="projectTitle" id="fruitNinjaClick"> <i>Python Fruit Ninja </i></p>
+                    </div>
+                    <div class="back">
+        				<div class="projectWork" id="fruitNinja">
+        					During my Freshman year, I made a Fruit ninja like game using Python. It was my 15-112 course project. The game is played using the mouse where you click and hold to cut the fruits. It has some added features like different levels and continue from the highest level you reached. As you pass more levels, the difficulty of the game increases.
+        					<br> To watch a video for the game <a href="https://www.youtube.com/watch?v=5wUMAo4AXUQ" style="color:blue;"> Click here </a>
+        				</div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="front">
+                        <div class="holder">
+                            <span class="projectType">Course</span>
+                            <br>
+        					<p class="projectTitle" id="HalaSeeHalaDoClick"> <i> Hala-See Hala-Do </i> </p>
+                        </div>
+                    </div>
+                    <div class="back">
+        				<div class="projectWork" id="HalaSeeHalaDo">
+        					Hala is a robot-receptionist that is in Carnegie Mellon University-Qatar campus. The idea of this project was based on Hala hence the name. This project was a team project for Perceptual Computing course. We had an animated face and we implemented some facial expressions. We used Intel SDK with the Creative camera for voice commands and face detection. The robot answers some specific questions asked using the voice commands and reply using voice synthesis. The robot also responds to some of the interlocutor's facial expressions like smiling and nodding, by smiling back and nodding back trying to enhance the Human-Robot interaction and make it more human friendly.
+        				</div>
+                    </div>
+                </div>
+
+                <div class="box">
+                        <div class="front">
+                            <span class="projectType">Course</span>
+                            <br>
+        					<p class="projectTitle" id="TwitterAnalyzerClick"> <i> Twitter Sentiment Analysis </i> </p>
+                        </div>
+
+                    <div class="back">
+        				<div class="projectWork" id="TwitterAnalyzer">
+        					This project was for Introduction to Text-Processing course. The sentiment analyzer is trained with thousands of tweets that are positive, neutral or negative. Then, using naive Bayes method and lib-SVM, it predicts if the other tweets (different than the ones used in training) are positive, neutral or negative. To implement that we had to use different features. My analyzer used different features like checking for positive or negative words in the tweet. It also check for emoticons (":)", ":D", ":(", ":S"...etc), and for all caps words. One other feature that I thought is essential is "not" being before a positive or a negative word because that will change the positivity or negativity of the tweet.
+        				</div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="front">
+                        <span class="projectType">Course</span>
+                        <br>
+    		           <p class="projectTitle" id="RobotCarClick"> <i> Hand controlled robot car </p> </a>
+                    </div>
+                    <div class="back">
+            			<div class="projectWork" id="RobotCar">
+            					This was a project for Embedded Systems course. My project was to build a system to control a robot car wirelessly using a glove that the user wear. Flex sensors attached to the glove were used to detect the bending of the fingers and then data was analyzed on the board and signal was sent using Xbee to the robot car. The car will then move based on the signal it received, either forward, backward, left or right. If no fingers were bent a stop signal is sent and the car stops.
+            			</div>
+                    </div>
+                </div>
+
+                <div class="box">
+    				<div class="front">
+                        <span class="projectType">Course</span>
+                        <br>
+    					<p class="projectTitle" id="threeD"> <i> 3D chat </i> </p>
+    				</div>
+                    <div class="back">
+        				<div class="projectWork" id="threeDchat">
+        					This was a project for Webapp Development course. We introduced a new chat room experience using a 3D Face that blinks, talk and move lips on talking. Not only that, but the face also tracks the user's face and tilt towards it. A user can type or speak and send to the other user in their language (English, French).
+        					<br> Click on <a class="projectLink" href="https://testthreed-chat.herokuapp.com/">3D chat</a> to try the webapp
+        					<br> To check the git repo, <a class="projectLink" href="https://github.com/zehni/ThreeD-Chat">Click here</a>
+        				</div>
+                    </div>
+                </div>
+
+                <div class="box">
+    				<div class="front">
+                        <span class="projectType">Course</span>
+                        <br>
+    					<p class="projectTitle" id="videoCDNclick"><i> Video CDN </i></p>
+    				</div>
+                    <div class="back">
+        				<div class="projectWork" id="videoCDN">
+        					This was a project for Introduction to Networks (15-441). We implemented adaptive bitrate selection and DNS load balancing and some parts of OSPF for a video content distribution network. After measuring the time it took to send a chunk of the video, we adaptively send the other chunks (higher or lower bitrate based on the connection).
+        				</div>
+                    </div>
+                </div>
+                <div class="box">
+    				<div class="front">
+                        <span class="projectType">Course</span>
+                        <br>
+    					<a class="projectTitle" id="bittorrentClick"> <i> Bittorrent-like with Congestion Control </i> </a>
+    				</div>
+                    <div class="back">
+        				<div class="projectWork" id="bittorrent">
+        					This was a project for Introduction to Networks (15-441). We implemented a file transfer application like Bittorent,
+        					It runs on top of UDP with Congestion Control and reliability concepts from TCP.
+        					The system can simultaneously download different chunks of the file from different clients.
+        				</div>
+                    </div>
+                </div>
+
+                <div class="box">
+    				<div class="front">
+                        <span class="projectType">Research</span>
+                        <br>
+    					 <p class="projectTitle" id="HalasKnowledgeBaseClick"> <i> Improving Hala's knowledge-base </i> </p>
+    				</div>
+                    <div class="back">
+        				<div class="projectWork" id="HalasKnowledgeBase">
+        					Hala is a multi-lingual robot-receptionist that is in Carnegie Mellon University Qatar Campus. You can find more details about hala's project by clicking <a href="http://hala.qatar.cmu.edu/index.html" style="color:blue;">here</a>. I was responsible to work with a research assistant in improving Hala's knowledge-base in English and Arabic. I wrote different python scripts that read from a file and produces the required output of questions and answers, which saved us a lot of time of manually doing it.
+        				</div>
+                    </div>
+                </div>
+
+                <div class="box">
+    			    <div class="front">
+                        <span class="projectType">Research</span>
+                        <br>
+    					<p class="projectTitle" id="DashboardClick"> <i> Hala's Dashboard </i> </p>
+    				</div>
+                    <div class="back">
+        				<div class="projectWork" id="Dashboard">
+        					I have worked on building an online dashboard for Hala. For that, I created python scripts that analyze Hala's logs and extract the useful data like questions, answers, misses, language that was used...etc and put them in a database. The data from the database was then used to plot different graphs in an online dashboard, where you can specify range of date and graphs will be plotted showing comparisons of data in this period of time. I used Django and django chartit as frameworks for building the dashboard and plotting the graphs.
+        				</div>
+                    </div>
+                </div>
+            </div>
+            <div class="dummy"></div>
+
+        </div>
+
+        <div class="content" id="resumeSect">
+            <span class="anchor"> </span>
+
+            <span class="center">
+                <h2> Resume </h2>
+            </span>
+            <div id="resume">
+
+                <embed src="resume.pdf#page=1&zoom=90%" width="70%" height="90%">
+
+            </div>
+        </div>
+
+        <div class="content" id="calendarSect">
+            <span class="anchor"></span>
+
+            <span class="center">
+                <h2> Calendar </h2>
+
+            </span>
+
+
+            <div id="calendar">
+
+                <iframe src="https://www.google.com/calendar/embed?title=John%20Naguib&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23ccccff&amp;src=john.m.naguib%40gmail.com&amp;color=%23711616&amp;ctz=Asia%2FQatar" style=" border:solid 1px #777 " width="70%" height="80%" frameborder="0" scrolling="no"></iframe>
+                <br />
+                <div>
+                    Set up a meeting?
+                                        <!-- Calendly inline widget begin -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/john-m-naguib" style="width:70%;height:390px;"></div>
+                    <script type="text/javascript" src="https://calendly.com/assets/external/widget.js"></script>
+                    <!-- Calendly inline widget end -->
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <div class="container">
+                <div class="copyrights">
+
+                        &#169; 2016 <a href="#">John</a>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+
+    </body>
+>>>>>>> 262017e3d7a04c2f1b66b6df39753156daf69c8e
 </html>

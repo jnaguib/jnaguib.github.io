@@ -1,0 +1,274 @@
+	/*a{
+		text-decoration: none;
+	}*/
+
+
+td{
+	font-size:10pt;
+	width:250pt;
+}
+
+a{
+	cursor: pointer;
+}
+
+body{
+	font-family: Arial, Helvetica, serif;
+	margin: 0;
+	padding: 0;
+	color: #dfdfdd;
+
+}
+
+
+h4{
+	margin-top:10pt;
+	margin-bottom:10pt;
+}
+
+h3{
+	margin-top:0pt;
+}
+
+.info{
+	margin-left: 10pt;
+}
+
+.content{
+	width: 100%;
+	text-align: left;
+
+	margin:0pt 30pt 0pt 0pt;
+	text-align: left;
+	line-height:1.5;
+	padding-bottom: 30px;
+}
+
+.loading{
+	position:fixed;
+	margin-left: 470pt;
+	margin-top: 200pt;
+}
+
+.name {
+	line-height: 0.5;
+	font-size: 20pt;
+	background-color: red;
+	padding: 30 30;
+	padding-bottom: 20;
+}
+
+
+#title{
+	font-size:16pt;
+	font-weight:bold;
+	margin-left:-20pt;
+	margin-bottom:10pt;
+	margin-top:10pt;
+}
+
+#subtitle1{
+	float:left;
+	margin-left:-15pt;
+	font-weight:bold;
+}
+
+#subtitle2{
+	margin: 5pt 0pt 5pt -10pt;
+	font-style:italic;
+}
+
+
+
+#date{
+	float:right;
+	font-style:italic;
+}
+
+#resumeBody{
+	width:80%;
+}
+
+#left{
+	margin-top:-10pt;
+	width:50%;
+	float:right;
+	margin-right:10pt;
+}
+
+#right{
+	margin-left:100pt;
+}
+
+
+.dummy{
+	width: 100%;
+	clear: both;
+}
+
+.resume{
+	font-size:10pt;
+	width:70%;
+	line-height:150%;
+	margin-left:20pt;
+
+}
+
+#calendar{
+	margin-left: 20%;
+}
+
+.center{
+	display:flex;
+	justify-content: center; /* align horizontal */
+	align-items: center;
+}
+
+.center h2{
+	font-size: 40pt;
+	font-family: 'Indie Flower',cursive;
+}
+
+#aboutme{
+	width: 100%;
+	background-color: #2f2f2f;
+	padding-bottom: 60px;
+	margin-top:50px;
+}
+
+
+#me{
+	width: 60%;
+	margin-left: 10%;
+}
+
+
+#personal{
+	margin-top: -4%;
+	float:right;
+	margin-right:10%;
+}
+
+#contactDetails{
+	margin-left:10%;
+}
+
+#pic{
+	/*display:block;*/
+    border-radius: 50%;
+    overflow: hidden;
+	margin-top: -5%;
+	margin-bottom: 10px;
+}
+
+
+#calendarSect{
+	float:right;
+	background-color: gray;
+	margin-right: 0;
+	margin-top: -5px;;
+}
+
+
+
+#pict{
+	float:right;
+	margin: 10px 15px 0px 0px;
+}
+
+ul {
+    list-style-type: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 50px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	opacity: 0.95;
+	z-index: 2000;
+
+}
+
+
+
+li {
+	display: inline;
+
+	font-family: Arial, Helvetica, serif;
+	font-size:12pt;
+	color: white;
+	margin-top: 20px;
+    float: left;
+}
+
+li a {
+	color: white;
+    text-align: center;
+    padding: 20px 90px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.anchor{
+  display: block;
+  height: 30px; /*same height as header*/
+  visibility: hidden;
+}
+
+#projects{
+
+	background-color: #A62D0C;
+}
+
+#hackathon{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	height: 320px;
+}
+
+#courses{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-width: 1px 0px 1px 0px;
+	border-style: dashed;
+}
+
+#research{
+	padding-top: 20px;
+	padding-bottom: 40px;
+	height: 320px;
+
+}
+
+#resume{
+	margin-left: 20%;
+}
+
+#resumeSect{
+	float:left;
+	background-color: #404040;
+}
+
+
+.container{
+	height: 30px;
+	width: 100%;
+	float: right;
+	text-align: center;
+	background-color: black;
+}
+
+.copyrights{
+	margin-top: 7px;
+}
+
+.copyrights a{
+	text-decoration: none;
+	color: white;
+}
