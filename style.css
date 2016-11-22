@@ -53,7 +53,7 @@ h3{
 .name {
 	line-height: 0.5;
 	font-size: 20pt;
-	background-color: red;
+	background-color: rgba(170,0,0,1);
 	padding: 30 30;
 	padding-bottom: 20;
 }
@@ -129,13 +129,6 @@ h3{
 	font-family: 'Indie Flower',cursive;
 }
 
-#aboutme{
-	width: 100%;
-	background-color: #2f2f2f;
-	padding-bottom: 60px;
-	margin-top:50px;
-}
-
 
 #me{
 	width: 60%;
@@ -162,14 +155,6 @@ h3{
 }
 
 
-#calendarSect{
-	float:right;
-	background-color: gray;
-	margin-right: 0;
-	margin-top: -5px;;
-}
-
-
 
 #pict{
 	float:right;
@@ -185,8 +170,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
-	opacity: 0.95;
+    background-color: #111;
+	opacity: 0.96;
 	z-index: 2000;
 
 }
@@ -212,7 +197,7 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #111;
+    background-color: #333;
 }
 
 .anchor{
@@ -221,9 +206,18 @@ li a:hover {
   visibility: hidden;
 }
 
-#projects{
+#aboutme{
 
-	background-color: #A62D0C;
+	width: 100%;
+	background-color: rgba(47, 47, 47, 1);
+	padding-bottom: 60px;
+	margin-top:0px;
+}
+
+#projects{
+	/*background-color: #A62D0C;*/
+	background-color: rgba(44,44,44,0.1);
+	color: #2f2f2f;
 }
 
 #hackathon{
@@ -248,12 +242,24 @@ li a:hover {
 
 #resume{
 	margin-left: 20%;
+	padding-bottom: 50px;
 }
 
 #resumeSect{
 	float:left;
-	background-color: #404040;
+	background-color: rgba(47, 47, 47, 1);
 }
+
+
+#calendarSect{
+	float:right;
+	background-color: rgba(44,44,44,0.1);;
+	color: #2A2A2A;
+	margin-right: 0;
+	margin-top: -5px;;
+}
+
+
 
 
 .container{
