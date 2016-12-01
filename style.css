@@ -59,6 +59,15 @@ h3{
 }
 
 
+.icon{
+	padding-left: 10px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	color: inherit;
+}
+
+
 #title{
 	font-size:16pt;
 	font-weight:bold;
@@ -126,7 +135,10 @@ h3{
 
 .center h2{
 	font-size: 40pt;
-	font-family: 'Indie Flower',cursive;
+	font-family: monospace;
+	letter-spacing: 2px;
+	word-spacing: -15px;
+	font-variant: small-caps;
 }
 
 
@@ -207,7 +219,6 @@ li a:hover {
 }
 
 #aboutme{
-
 	width: 100%;
 	background-color: rgba(47, 47, 47, 1);
 	padding-bottom: 60px;
@@ -217,7 +228,8 @@ li a:hover {
 #projects{
 	/*background-color: #A62D0C;*/
 	background-color: rgba(44,44,44,0.1);
-	color: #2f2f2f;
+	/*color: #2f2f2f;*/
+	color: black;
 }
 
 #hackathon{
@@ -254,7 +266,7 @@ li a:hover {
 #calendarSect{
 	float:right;
 	background-color: rgba(44,44,44,0.1);;
-	color: #2A2A2A;
+	color: black;
 	margin-right: 0;
 	margin-top: -5px;;
 }
