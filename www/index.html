@@ -1,10 +1,8 @@
-!<!DOCTYPE html>
 <html>
     <head>
-        <script src="script.js"></script>
-        <script src="https://use.fontawesome.com/c39282e9a1.js"></script>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link rel="stylesheet" type="text/css" href="projects.css">
+        <script src="../script.js"></script>
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <link rel="stylesheet" type="text/css" href="../projects.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
 
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
@@ -34,7 +32,7 @@
             </li>
 
             <a id="pict" href="https://www.cmu.edu">
-                <img src="CMU.png">
+                <img src="../CMU.png">
             </a>
 
     	</ul>
@@ -48,19 +46,13 @@
 
             <div id="personal">
                 <div id="pic">
-                    <img src="Me.jpg" width="200" height="200">
+                    <img src="../Me.jpg" width="200" height="200">
                 </div>
 
                 <div id="contactDetails">
-                    <a class="icon" href="mailto:john.m.naguib@gmil.com">
-                        <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
-                    </a>
-                    <a class="icon" href="https://www.linkedin.com/pub/john-naguib/91/33b/76">
-                        <i class="icon fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-                    </a>
-                    <a class="icon" href="https://github.com/jnaguib">
-                        <i class="icon fa fa-github-alt fa-2x" aria-hidden="true"></i>
-                    </a>
+                    <a href="mailto:john.m.naguib@gmil.com"><img src="mail.png" width="40" height="40" style="vertical-align:middle; margin-right:10px;"></a>
+                    <a href="https://eg.linkedin.com/pub/john-naguib/91/33b/76" style="text-decoration:none;"><span style="font: 80% Arial,sans-serif; color:#0783B6;"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png" width="50" height="40" alt="View John Naguib's LinkedIn profile" style="vertical-align:middle;" border="0"></span></a>
+                    <a href="https://github.com/jnaguib" ><img src="github.png" width="40" height="40" style="vertical-align:middle"></a>
                 </div>
             </div>
 
@@ -82,13 +74,16 @@
                 <h2> Projects </h2>
             </span>
 
-
+            <span class="center">
+                Click on a box for more info
+            </span>
 
             <div id="projectBoxes">
                 <div class="box">
                     <div class="front">
-                        <div class="projectType hackathon">Hackathon</div>
-    					<p class="projectTitle" id="roomieClick"> Roomie </p>
+                        <span class="projectType">Hackathon</span>
+                        <br>
+    					<p class="projectTitle" id="roomieClick"> <i> Roomie </i> </p>
                     </div>
                     <div class="back">
         				<div class="projectWork" id="roomie">
@@ -104,8 +99,9 @@
 
                 <div class="box">
                     <div class="front">
-                            <div class="projectType course">Course</div>
-        				    <p class="projectTitle" id="fruitNinjaClick"> Python Fruit Ninja </p>
+                            <span class="projectType">Course</span>
+                            <br>
+        				    <p class="projectTitle" id="fruitNinjaClick"> <i>Python Fruit Ninja </i></p>
                     </div>
                     <div class="back">
         				<div class="projectWork" id="fruitNinja">
@@ -117,8 +113,11 @@
 
                 <div class="box">
                     <div class="front">
-                        <div class="projectType course">Course</div>
-    					<p class="projectTitle" id="HalaSeeHalaDoClick"> Hala-See Hala-Do  </p>
+                        <div class="holder">
+                            <span class="projectType">Course</span>
+                            <br>
+        					<p class="projectTitle" id="HalaSeeHalaDoClick"> <i> Hala-See Hala-Do </i> </p>
+                        </div>
                     </div>
                     <div class="back">
         				<div class="projectWork" id="HalaSeeHalaDo">
@@ -129,8 +128,9 @@
 
                 <div class="box">
                         <div class="front">
-                            <div class="projectType course">Course</div>
-        					<p class="projectTitle" id="TwitterAnalyzerClick"> Twitter Sentiment Analysis </p>
+                            <span class="projectType">Course</span>
+                            <br>
+        					<p class="projectTitle" id="TwitterAnalyzerClick"> <i> Twitter Sentiment Analysis </i> </p>
                         </div>
 
                     <div class="back">
@@ -141,8 +141,9 @@
                 </div>
                 <div class="box">
                     <div class="front">
-                        <div class="projectType course">Course</div>
-    		           <p class="projectTitle" id="RobotCarClick"> Hand controlled robot car </p> </a>
+                        <span class="projectType">Course</span>
+                        <br>
+    		           <p class="projectTitle" id="RobotCarClick"> <i> Hand controlled robot car </p> </a>
                     </div>
                     <div class="back">
             			<div class="projectWork" id="RobotCar">
@@ -153,8 +154,9 @@
 
                 <div class="box">
     				<div class="front">
-                        <div class="projectType course">Course</div>
-    					<p class="projectTitle" id="threeD"> 3D chat </p>
+                        <span class="projectType">Course</span>
+                        <br>
+    					<p class="projectTitle" id="threeD"> <i> 3D chat </i> </p>
     				</div>
                     <div class="back">
         				<div class="projectWork" id="threeDchat">
@@ -167,8 +169,9 @@
 
                 <div class="box">
     				<div class="front">
-                        <div class="projectType course">Course</div>
-    					<p class="projectTitle" id="videoCDNclick"> Video CDN </p>
+                        <span class="projectType">Course</span>
+                        <br>
+    					<p class="projectTitle" id="videoCDNclick"><i> Video CDN </i></p>
     				</div>
                     <div class="back">
         				<div class="projectWork" id="videoCDN">
@@ -178,8 +181,9 @@
                 </div>
                 <div class="box">
     				<div class="front">
-                        <div class="projectType course">Course</div>
-    					<p class="projectTitle" id="bittorrentClick"> Bittorrent-like with Congestion Control </p>
+                        <span class="projectType">Course</span>
+                        <br>
+    					<a class="projectTitle" id="bittorrentClick"> <i> Bittorrent-like with Congestion Control </i> </a>
     				</div>
                     <div class="back">
         				<div class="projectWork" id="bittorrent">
@@ -192,8 +196,9 @@
 
                 <div class="box">
     				<div class="front">
-                        <div class="projectType research">Research</div>
-    					 <p class="projectTitle" id="HalasKnowledgeBaseClick"> Improving Hala's knowledge-base </p>
+                        <span class="projectType">Research</span>
+                        <br>
+    					 <p class="projectTitle" id="HalasKnowledgeBaseClick"> <i> Improving Hala's knowledge-base </i> </p>
     				</div>
                     <div class="back">
         				<div class="projectWork" id="HalasKnowledgeBase">
@@ -204,8 +209,9 @@
 
                 <div class="box">
     			    <div class="front">
-                        <div class="projectType research">Research</div>
-    					<p class="projectTitle" id="DashboardClick">  Hala's Dashboard </p>
+                        <span class="projectType">Research</span>
+                        <br>
+    					<p class="projectTitle" id="DashboardClick"> <i> Hala's Dashboard </i> </p>
     				</div>
                     <div class="back">
         				<div class="projectWork" id="Dashboard">
@@ -227,7 +233,7 @@
             </span>
             <div id="resume">
 
-                <embed src="resume.pdf#page=1&zoom=90%" width="80%" height="90%">
+                <embed src="../resume.pdf#page=1&zoom=90%" width="70%" height="90%">
 
             </div>
         </div>
@@ -269,5 +275,4 @@
 
 
     </body>
-
 </html>
