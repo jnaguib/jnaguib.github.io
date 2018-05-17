@@ -1,0 +1,38 @@
+table td + td { border-left:1px solid black; }
+table{
+  width: 98%;
+  float: left;
+}
+td{
+  text-align: center;
+  width: 20px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+input{
+  width: 100%;
+  text-align: center;
+}
+
+.dayField{
+  width: 20px;
+}
+
+.fillbtn{
+  float: right;
+}
+
+.tablecell{
+  text-align: center;
+}
+
+.price{
+}
+
+
+#addbutton{
+  margin-top: 10%;
+  width: 2%;
+  height: 40%;
+}
