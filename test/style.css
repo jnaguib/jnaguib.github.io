@@ -1,7 +1,7 @@
 table td + td { border-left:1px solid black; }
 table{
   width: 98%;
-  float: left;
+  float: right;
 }
 td{
   text-align: center;
