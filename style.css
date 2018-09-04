@@ -16,6 +16,7 @@ body{
 	font-family: Arial, Helvetica, serif;
 	margin: 0;
 	padding: 0;
+	margin-top: -40;
 	color: #dfdfdd;
 
 }
@@ -265,7 +266,7 @@ li a:hover {
 
 #calendarSect{
 	float:right;
-	background-color: rgba(44,44,44,0.1);;
+	background-color: rgba(44,44,44,0.1);
 	color: black;
 	margin-right: 0;
 	margin-top: -5px;;

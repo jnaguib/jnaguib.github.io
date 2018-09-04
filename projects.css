@@ -85,12 +85,11 @@
     margin-bottom: 50px;
 	margin-left: 50px;
 	width: 350px;
-	height: 300px;
+	height: 320px;
 	padding-right: 0px;
 	padding-left: 0px;
 
-	-webkit-perspective: 600px;
-	-moz-perspective: 600px;
+	perspective: 600px;
 
     cursor: pointer;
 }
@@ -101,41 +100,30 @@
 	/*box-shadow: 5px 5px 7px #560D00;*/
     box-shadow: 5px 5px 7px #808080;
 	height: inherit;
-    -webkit-transform: rotateX(0deg) rotateY(0deg);
-       -moz-transform: rotateX(0deg) rotateY(0deg);
-    -webkit-transform-style: preserve-3d;
-       -moz-transform-style: preserve-3d;
-    -webkit-backface-visibility: hidden;
-       -moz-backface-visibility: hidden;
-    -webkit-transition: all .4s ease-in-out;
-       -moz-transition: all .4s ease-in-out;
-        -ms-transition: all .4s ease-in-out;
-         -o-transition: all .4s ease-in-out;
-            transition: all .4s ease-in-out;
+    transform: rotateX(0deg) rotateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+
+    transition: transform .35s, visibility .4s;
+    /* transition: visibility .4s ; */
 }
 
 .box .back {
 	height: inherit;
 	position: absolute;
 	overflow: auto;
-
+  visibility: hidden;
     background-color: #FCFCFC;
     border-radius: 5px 5px 5px 5px;
 	box-shadow: 5px 5px 7px #808080;
 
 	top: 0;
     z-index: 1000;
-    -webkit-transform: rotateY(-180deg);
-       -moz-transform: rotateY(-180deg);
-    -webkit-transform-style: preserve-3d;
-       -moz-transform-style: preserve-3d;
-    -webkit-backface-visibility: hidden;
-       -moz-backface-visibility: hidden;
-    -webkit-transition: all .4s ease-in-out;
-       -moz-transition: all .4s ease-in-out;
-        -ms-transition: all .4s ease-in-out;
-         -o-transition: all .4s ease-in-out;
-            transition: all .4s ease-in-out;
+    transform: rotateY(-180deg);
+       transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: transform .35s, visibility .1s ;
+  /* transition: visibility .4s ; */
 }
 
 .front{
@@ -155,14 +143,14 @@
 }
 .box.flip .front{
 	z-index: 900;
-	-webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
+	transform: translateX(-50%) rotateY(180deg);
 }
 .box.flip .back{
 	margin-top: 15px;
 	z-index: 1000;
-    -webkit-transform: rotateX(0deg) rotateY(0deg);
-    -moz-transform: rotateX(0deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
+    visibility: visible;
+
 }
 
 .click_text{
