@@ -1,0 +1,340 @@
+<html>
+ 	<head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.0/dist/semantic.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="http://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+        <script src="http://cdn.jsdelivr.net/npm/jquery.localscroll@2.0.0/jquery.localScroll.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.0/dist/semantic.min.js"></script>
+
+    </head>
+ 	<body>
+        <!-- <div class="ui middle aligned four row centered inverted menu navigation"> -->
+        <div id="navigation">
+            <div class="ui compact centered left fixed vertical menu inverted" id="menuCollection">
+                    <a href="#about_me_page" class="ui active item">  About  </a>
+                     <a href="#work_page" class="ui item link "> My Work </a>
+            </div>
+        </div>
+
+        <div class="ui grid">
+            <div class="sitePage" id="about_me_page">
+                <h1 class="title"> About me  </h1>
+                <div class="row">
+                    <div class="ui stackable two column grid" id="aboutme">
+                        <img class="ui column circular image middle aligned" id="john_pic"  src="img/me.jpg">
+                        <div class="column" id="about_me_text">
+                            I am John Mikhail, a computer science graduate from Carnegie Mellon University, class of 2016 minoring in Robotics.
+                            I love Robotics and trying to learn the most from one of the best Robotics institutes in the world, the RI in CMU.
+                            I have worked with Hala (a bi-lingual roboceptionist in Carnegie Mellon University in Qatar) in my first two years in the university,
+                            details about my work can be found in my Resume. I am also interested in HCI (Human-Computer interaction) and trying to find ways to
+                            improve the ways we can interact with computers. I am also interested in Psychology and knowing how people interact which I believe can help us improve HRI (Human-Robot Interaction) and build better robots. <br>
+                            I became interested in Webapp development after taking Webapp course and built some cool projects.
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="sitePage" id="work_page">
+
+                <h1 class="title"> My Work  </h1>
+                <div class="ui cards">
+                    <div class="card-collection" id="coursesCollection">
+                        <div class="ui card">
+                            <div class="content">
+                                <div class="ui header">
+                                    Courses Projects
+                                </div>
+                                <div class="description">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui card">
+                            <div class="content">
+                                <div class="header">
+                                    Courses
+                                </div>
+                                <div class="description">
+                                    Courses projects
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui card">
+                            <div class="content">
+                                <div class="header">
+                                    Courses
+                                </div>
+                                <div class="description">
+                                    Courses projects
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui card">
+                            <div class="content">
+                                <div class="ui teal header">
+                                    Courses Projects
+                                </div>
+                                <div class="ui description left aligned">
+                                    <p class="ui tiny label">
+                                        Python Fruit Ninja
+                                    </p> <br  />
+                                    <p class="ui tiny label">
+                                        Hala-See Hala-Do <br />
+                                    </p>
+                                    <p class="ui tiny label">
+                                        Twitter Sentiment Analysis <br>
+                                    </p>
+                                    <p class="ui tiny label">
+                                        Hand Controlled Robot Car <br>
+                                    </p>
+                                    <p class="ui tiny label">
+                                        3D-Chat <br />
+                                    </p>
+                                    <p class="ui tiny label">
+                                        Video CDN <br  />
+                                    </p>
+                                    <p class="ui tiny label">
+                                        Bittorent like with Congestion control <br />
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-collection" id="researchCollection">
+                        <div class="ui card">
+                            <div class="content">
+                                <div class="header">
+                                    Research
+                                </div>
+
+                                <div class="description">
+                                    Research projects
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="ui card">
+                            <div class="content">
+                                <div class="header">
+                                    Research
+                                </div>
+
+                                <div class="description">
+                                    Research projects
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="ui card">
+                            <div class="content">
+                                <div class="header">
+                                </div>
+
+                                <div class="description">
+                                    <div class="ui tiny label">
+                                        Hala's Dashboard <br />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="ui card">
+                            <div class="content">
+                                <div class="ui teal header">
+                                    Research Projects
+                                </div>
+                                <div class="ui description middle aligned">
+                                    <p class="ui tiny label middle aligned">
+                                        Improving Hala's knowledge-base
+                                    </p> <br />
+                                    <p class="ui tiny label middle aligned">
+                                        Hala's Dashboard
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="ui modal coursesModal">
+                <i class="close icon"></i>
+                <div class="ui header large center aligned">
+                    Courses
+                </div>
+                <div class="content">
+                    <div class="ui projectsCardsContainer">
+                        <div class="ui raised card j_card">
+                            <div class="content">
+                                <div class="ui teal huge label">
+                                    Python Fruit Ninja
+                                </div>
+                                <div class="ui justify aligned description" >
+                                    During my Freshman year, I made a Fruit ninja like game using Python. It was my 15-112 course project.
+                                    The game is played using the mouse where you click and hold to cut the fruits. It has some added features
+                                     like different levels and continue from the highest level you reached. As you pass more levels,
+                                     the difficulty of the game increases.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui raised card j_card">
+                            <div class="content">
+                                <div class="ui teal huge label">
+                                    Hala-See Hala-Do
+                                </div>
+                                <div class="ui justify aligned description" >
+                                    This project was for Perceptual Computing class.
+                            It is based on Hala; a robot-receptionist in CMU-Q.
+                             We used Intel SDK with the Creative camera for voice commands and face detection. The robot answers
+                            specific questions asked using the voice commands and reply using voice synthesis.  Facial expressions
+                             were implemented on an animated face responding to some of the
+                            interlocutor's facial expressions like smiling and nodding back for enhancing Human Robot Interaction.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui raised card j_card">
+                            <div class="content">
+                                <div class="ui teal huge label">
+                                    Twitter Sentiment Analysis
+                                </div>
+                                <div class="ui justify aligned description" >
+                                    This project was for Introduction to Text-Processing course. The sentiment analyzer is trained
+                                     with thousands of tweets that are positive, neutral or negative. Then, using naive Bayes method
+                                      and lib-SVM, it predicts if the other tweets (different than the ones used in training) are positive,
+                                      neutral or negative. To implement that we had to use different features. My analyzer used different
+                                      features like checking for positive or negative words in the tweet. It also check for emoticons
+                                      (":)", ":D", ":(", ":S"...etc), and for all caps words. One other feature that I thought is essential
+                                       is "not" being before a positive or a negative word because that will change the positivity or negativity of the tweet.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui raised card j_card">
+                            <div class="content">
+                                <div class="ui teal huge label">
+                                    Hand controlled robot car
+                                </div>
+                                <div class="ui justify aligned description" >
+                                    This was a project for Embedded Systems course. My project was to build a system to control a robot car wirelessly using
+                                     a glove that the user wear. Flex sensors attached to the glove were used to detect the bending of the fingers and then data
+                                      was analyzed on the board and signal was sent using Xbee to the robot car. The car will then move based on the signal it received,
+                                      either forward, backward, left or right. If no fingers were bent a stop signal is sent and the car stops.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui raised card j_card">
+                            <div class="content">
+                                <div class="ui teal huge label">
+                                    3D chat
+                                </div>
+                                <div class="ui justify aligned description" >
+                                    This was a project for Webapp Development course. We introduced a new chat room experience using a 3D Face that blinks,
+                                    talk and move lips on talking. Not only that, but the face also tracks the user's face and tilt towards it. A user can
+                                     type or speak and send to the other user in their language (English, French).
+        					         <br> Click on <a class="projectLink" href="https://testthreed-chat.herokuapp.com/">3D chat</a> to try the webapp
+        					          <br> To check the git repo, <a class="projectLink" href="https://github.com/zehni/ThreeD-Chat">Click here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui raised card j_card">
+                            <div class="content">
+                                <div class="ui teal huge label">
+                                    Video CDN
+                                </div>
+                                <div class="ui justify aligned description" >
+                                This was a project for Introduction to Networks (15-441). We implemented adaptive bitrate selection and DNS load balancing
+                                and some parts of OSPF for a video content distribution network. After measuring the time it took to send a chunk of the video,
+                                 we adaptively send the other chunks (higher or lower bitrate based on the connection).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui raised card j_card">
+                            <div class="content">
+                                <div class="ui teal huge label">
+                                    Bittorrent-like with Congestion Control
+                                </div>
+                                <div class="ui justify aligned description" >
+                                    This was a project for Introduction to Networks (15-441). We implemented a file transfer application like Bittorent,
+                                    It runs on top of UDP with Congestion Control and reliability concepts from TCP.
+                                    The system can simultaneously download different chunks of the file from different clients.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="ui modal researchModal">
+                <i class='close icon'></i>
+                <div class="ui header large center aligned">
+                    Research
+                </div>
+                <div class="content">
+                    <div class="ui projectsCardsContainer">
+                        <div class="ui raised card j_card">
+                            <div class="content">
+                                <div class="ui teal huge label">
+                                    Improving Hala's knowledge-base
+                                </div>
+                                <div class="ui justify aligned description" >
+                                    Hala is a multi-lingual robot-receptionist that is in Carnegie Mellon University Qatar Campus.
+                                    You can find more details about hala's project by clicking <a href="http://hala.qatar.cmu.edu/index.html" style="color:blue;">here</a>.
+                                    I was responsible to work with a research assistant in improving Hala's knowledge-base in English and Arabic.
+                                    I wrote different python scripts that read from a file and produces the required output of questions and answers,
+                                    which saved us a lot of time of manually doing it.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui raised card j_card">
+                            <div class="content">
+                                <div class="ui teal huge label">
+                                    Hala's Dashboard
+                                </div>
+                                <div class="ui justify aligned description" >
+                                    I have worked on building an online dashboard for Hala. For that, I created python scripts that analyze
+                                    Hala's logs and extract the useful data like questions, answers, misses, language that was used...etc
+                                    and put them in a database. The data from the database was then used to plot different graphs in an online dashboard,
+                                    where you can specify range of date and graphs will be plotted showing comparisons of data in this period of time.
+                                    I used Django and django chartit as frameworks for building the dashboard and plotting the graphs.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+ 	</body>
+
+    <script>
+        (function() {
+            $("#coursesCollection").click(function(){
+                    ($(".ui.modal.coursesModal").modal({blurring: true, duration: 100}).modal('setting', 'transition', 'zoom').modal('show'));
+            })
+
+            $("#researchCollection").click(function(){
+                ($(".ui.modal.researchModal").modal({blurring: true, duration: 100}).modal('setting', 'transition', 'zoom').modal('show'));
+            })
+
+            // $("#work").dimmer({on: "click", duration: 400, transition: "zoom"});
+            $('.menu').localScroll({duration:600});
+        } )();
+
+    </script>
+
+ </html>
