@@ -11,6 +11,7 @@
         <script src="http://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
         <script src="http://cdn.jsdelivr.net/npm/jquery.localscroll@2.0.0/jquery.localScroll.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.0/dist/semantic.min.js"></script>
+        <script src="http://d3js.org/d3.v2.min.js?2.9.6"></script>
 
     </head>
  	<body>
@@ -219,12 +220,7 @@
             </div>
 
             <div class="sitePage" id="skills_page">
-                <h1 class="title"> Skills </h1>
 
-                <h2 class="skill" id="skill_ror"> RoR </h2>
-                <div class="line">
-
-                </div>
             </div>
 
             <div class="ui modal coursesModal">
@@ -543,6 +539,250 @@
             // $("#work").dimmer({on: "click", duration: 400, transition: "zoom"});
             $('.menu').localScroll({duration:600});
         } )();
+
+
+        var words = [
+            {
+                "group":"n",
+                "word":"main node",
+                "name": "Skills",
+                "radius": 70,
+                "children":[
+                    {
+                        "group":"n",
+                        "name":"React",
+                        "radius": 60,
+                        "fill": "red"
+                    },
+                    {
+                        "group":"n",
+                        "name":"RoR",
+                        "radius": 50,
+                        "fill": "red"
+                    },
+                    {
+                        "group":"n",
+                        "name":"Django",
+                        "radius": 40,
+                        "fill": "red"
+                    },
+                    {
+                        "group":"n",
+                        "name":"Python",
+                        "radius": 50,
+                        "fill": "red"
+                    },
+                    {
+                        "group":"v",
+                        "name":"Java",
+                        "radius": 40,
+                        "fill": "red"
+                    },
+                    {
+                        "group":"s",
+                        "name":"Node.js",
+                        "radius": 45,
+                        "fill": "red"
+                    },
+                    {
+                        "group":"s",
+                        "name":"C",
+                        "radius": 30,
+                        "fill": "red"
+                    },
+                    {
+                        "group":"s",
+                        "name":"Angular",
+                        "radius": 40,
+                        "fill": "red"
+                    },
+
+                ]
+            }
+        ]
+
+        function getRandom(min , max)
+        {
+            return Math.random() * (max-min) + min ;
+        }
+
+        var w = 960,
+    	h = 600,
+    	radius = 50,
+    	node,
+    	link,
+    	root;
+
+    var force = d3.layout.force()
+    	.on("tick", tick)
+    	.charge(function(d) { return -700; })
+    	.linkDistance(function(d) { return getRandom(170, 320); })
+    	.size([w, h - 60 ]);
+
+    var svg = d3.select("#skills_page").append("svg")
+    .attr("preserveAspectRatio", "xMinYMin meet")
+    .attr("viewBox", `0 0 ${w} ${h}`)
+
+    root = words[0]; //set root node
+    root.fixed = true;
+    console.log(root);
+    root.x = w / 2;
+    root.y = h / 2 - 50;
+    update();
+
+    function update() {
+    	var nodes = flatten(root),
+    	links = d3.layout.tree().links(nodes);
+
+    	// Restart the force layout.
+    	force
+    		.nodes(nodes)
+    		.links(links)
+    		.start();
+
+    	// Update the links…
+    	link = svg.selectAll(".link")
+    		.data(links);
+
+    	// Enter any new links.
+    	link.enter().insert("svg:line", ".node")
+    		.attr("class", "link")
+    		.attr("x1", function(d) { return d.source.x; })
+    		.attr("y1", function(d) { return d.source.y; })
+    		.attr("x2", function(d) { return d.target.x; })
+    		.attr("y2", function(d) { return d.target.y; });
+
+    	// Exit any old links.
+    	link.exit().remove();
+
+    	// Update the nodes…
+    	node = svg.selectAll("circle.node")
+    		.data(nodes)
+    		.style("fill", color);
+
+    	node.transition()
+    		.attr("r", radius);
+
+    	// Enter any new nodes.
+    	node.enter().append("svg:circle")
+    		.attr("class", "node")
+    		.attr("cx", function(d) { return getRandom(50, 850); })
+    		.attr("cy", function(d) { return getRandom(50, 400); })
+    		.attr("r", function(d) { return d.radius;})
+    		.style("fill", color)
+
+            .on("mouseover", handleMouseOver)
+            .on("mouseout", handleMouseOut)
+            .call(force.drag);
+
+
+    	// Exit any old nodes.
+    	node.exit().remove();
+
+        // node.append("text").attr("class", function (d) {
+        //     return "nodetext title_" + d.name
+        // }).attr("dx", 0).attr("dy", ".35em").style("font-size", "10px").attr(
+        //     "text-anchor", "middle").style("fill", "white").text(
+        // function (d) {
+        //     console.log(d);
+        //     return d.name
+        // });
+
+
+
+        title = svg.selectAll("text.skillName")
+             .data(nodes);
+
+        // Enter any new titles.
+        title.enter()
+            .append("text")
+            .attr("class", "skillName")
+            .attr("dx", 0).attr("dy", ".35em").style("font-size", "25px")
+            .attr("text-anchor", "middle").style("fill", "white")
+          	.text(function(d) { return d.name; });
+
+        // Exit any old titles.
+        title.exit().remove();
+    }
+
+    function handleMouseOver(d, i){
+        d3.select(this).transition()
+            .ease("elastic")
+            .duration("500")
+            .attr("r", d.radius * 1.35);
+    }
+
+    function handleMouseOut(d, i){
+        d3.select(this).transition()
+            .ease("elastic")
+            .duration("500")
+            .attr("r", d.radius);
+    }
+
+    function tick() {
+    	link.attr("x1", function(d) { return d.source.x; })
+    		.attr("y1", function(d) { return d.source.y; })
+    		.attr("x2", function(d) { return d.target.x; })
+    		.attr("y2", function(d) { return d.target.y; });
+
+    	node.attr("cx", function(d) { return d.x; })
+    		  .attr("cy", function(d) { return d.y; });
+
+        title.attr("transform", function(d){ return "translate("+d.x+","+d.y+")"; });
+    }
+
+    // Color leaf nodes orange, and packages white or blue.
+    function color(d) {
+        console.log(d);
+
+    	if(d._children){
+    		return "#95a5a6";
+    	}else{
+    		switch(d.group) {
+    			case 'r': //adverb
+    				return "#e74c3c";
+    				break;
+    			case 'n': //noun
+    				return "#3498db";
+    				break;
+    			case 'v': //verb
+    				return "#2ecc71";
+    				break;
+    			case 's': //adjective
+    				return "#e78229";
+    				break;
+    			default:
+    				return "#9b59b6";
+    		}
+    	}
+    }
+
+    // Toggle children on click.
+    function click(d) {
+    	if (d.children) {
+    		d._children = d.children;
+    		d.children = null;
+    	} else {
+    		d.children = d._children;
+    		d._children = null;
+    	}
+    	update();
+    }
+
+    // Returns a list of all nodes under the root.
+    function flatten(root) {
+    	var nodes = [], i = 0;
+
+    	function recurse(node) {
+    		if (node.children) node.size = node.children.reduce(function(p, v) { return p + recurse(v); }, 0);
+    		if (!node.id) node.id = ++i;
+    		nodes.push(node);
+    		return node.size;
+    	}
+
+    	root.size = recurse(root);
+    	return nodes;
+    }
 
     </script>
 
