@@ -174,7 +174,9 @@ body{
 
 .ui.modal>.content{
   background-color: rgba(0, 0, 0, 0.95);
+  overflow-x: scroll;
 }
+
 
 
 
@@ -321,9 +323,19 @@ body{
 }
 
 .ui.projectsCardsContainer{
-  overflow-x: auto;
+  overflow-x: scroll;
   white-space: nowrap;
   padding: 10px;
+}
+
+.ui.projectsCardsContainer::-webkit-scrollbar-track{
+  background-color: #666;
+  border-radius: 5px;
+}
+.ui.projectsCardsContainer::-webkit-scrollbar-thumb{
+  background-color: rgba(5,228,225, 0.8);
+  outline: 1px solid red;
+
 
 }
 
