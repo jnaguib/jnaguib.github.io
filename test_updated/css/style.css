@@ -103,10 +103,16 @@ body{
 
 
 #john_pic{
-  min-width: 200px;
+/*  min-width: 200px;
   max-width: 250px;
+  max-height: 180px;*/
+  
+  width: 270px;
+  height: 290px;
+  border-radius: 130;
+  object-fit:cover;
   align-self: center;
-  justify-self: end;
+  justify-self: flex-end;
   margin-left: 100px;
   margin-top: -200px;
 
@@ -114,18 +120,22 @@ body{
 
 #about_me_text{
 
-  align-self: center;
+  align-self: flex-start;
   justify-self: center;
   text-align: justify;
   grid-column: 2/3;
-  margin-top: -200px;
+  line-height: 1.5;
+  margin-top: 5%;
   width: 80%;
   font-weight: 700;
-
+  font-size: 14pt;
 }
 
 #work_page{
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0px;
+  padding-left: 5rem;
+  padding-right: 50px;
   grid-template-rows: 1fr 5fr;
 
 }
@@ -140,20 +150,20 @@ body{
 
 
 #coursesCollection{
-  justify-self: start;
+  /*justify-self: start;*/
   align-self: start;
   grid-column: 2/3;
   display: block;
 }
 
 #researchCollection{
-  justify-self: start;
+  /*justify-self: start;*/
   align-self: start;
   grid-column: 3/4;
 }
 
 #hackathonCollection{
-  justify-self: start;
+  /*justify-self: start;*/
   align-self: start;
   grid-column: 4/5;
 
@@ -163,8 +173,8 @@ body{
 
 
 .ui.modal{
-  width: 700px;
-  background-color: red;
+  width: 80%;
+  
 }
 
 .ui.modal>.header{
@@ -191,7 +201,7 @@ body{
   width: 200px;
   height: 250px;
   position: relative;
-  margin-right: 130px;
+  justify-self: center;
   margin-top: 100px;
   z-index: 2;
 }

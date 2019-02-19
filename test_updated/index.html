@@ -29,12 +29,16 @@
                 <h1 class="title"> About me  </h1>
                 <img class="ui column circular image middle aligned" id="john_pic"  src="img/me.jpg">
                 <div class="ten wide column" id="about_me_text">
+                    I am John Mikhail, a Full-Stack web developer with Computer Science degree from Carnegie Mellon University with a minor in Robotics. With great interest in robotics, I joined CMU-Q robotics lab in the first 2 years in university and worked on Hala (a bi-lingual roboceptionist). I have always had interest in Psychology and understanding how people interact to build better HCI and HRI systems. <br>
+                    In my last year in university, I grew an interest in web app develpoment and being one of the first employees in different start-ups gave me great experience to build large systems which recently led me to co-found Kiddy. These experiences made me comfortable working on large-scale web applications and smartphone applications using React Native. <br>
+<!-- 
+
                     I am John Mikhail, a computer science graduate from Carnegie Mellon University, class of 2016 minoring in Robotics.
                     I love Robotics and trying to learn the most from one of the best Robotics institutes in the world, the RI in CMU.
                     I have worked on Hala (a bi-lingual roboceptionist in Carnegie Mellon University in Qatar) in my first two years in the university,
                     details about my work can be found in my Resume. I am also interested in HCI (Human-Computer interaction) and trying to find ways to
                     improve the ways we can interact with computers. I am also interested in Psychology and knowing how people interact which I believe can help us improve HRI (Human-Robot Interaction) and build better robots. <br>
-                    I became interested in Webapp development after taking Webapp course and built some cool projects.
+                    I became interested in Webapp development after taking Webapp course and built some cool projects. -->
                 </div>
 
             </div>
@@ -44,6 +48,59 @@
                 <h1 class="title"> My Work  </h1>
 
                 <!-- <div class="ui cards content"> -->
+
+                    <div class="card-collection" id="workCollection">
+                        <div class="ui card">
+                            <div class="content">
+                                <div class="ui header">
+                                    Work
+                                </div>
+                                <div class="description">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui card">
+                            <div class="content">
+                                <div class="header">
+                                    Work
+                                </div>
+                                <div class="description">
+                                    Work
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui card">
+                            <div class="content">
+                                <div class="header">
+
+                                </div>
+                                <div class="description">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui card">
+                            <div class="content">
+                                <div class="ui teal header">
+                                    Work
+                                </div>
+                                <div class="ui description left aligned">
+                                    <p class="ui tiny blue label">
+                                        Toptal
+                                    </p> <br  />
+                                    <p class="ui tiny blue label">
+                                        Kiddy
+                                    </p> <br  />
+                                    <p class="ui tiny blue label">
+                                        Inpleo <br />
+                                    </p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="card-collection" id="coursesCollection">
                         <div class="ui card">
                             <div class="content">
@@ -77,9 +134,12 @@
                         <div class="ui card">
                             <div class="content">
                                 <div class="ui teal header">
-                                    Courses Projects
+                                    Projects
                                 </div>
                                 <div class="ui description left aligned">
+                                    <p class="ui tiny blue label">
+                                        Desktop Flush
+                                    </p> <br  />
                                     <p class="ui tiny blue label">
                                         Python Fruit Ninja
                                     </p> <br  />
@@ -95,12 +155,7 @@
                                     <p class="ui tiny blue label">
                                         3D-Chat <br />
                                     </p>
-                                    <p class="ui tiny blue label">
-                                        Video CDN <br  />
-                                    </p>
-                                    <p class="ui tiny blue label">
-                                        Bittorent with Congestion control <br />
-                                    </p>
+
 
                                 </div>
                             </div>
@@ -226,10 +281,54 @@
             <div class="ui modal coursesModal">
                 <i class="close icon"></i>
                 <div class="ui header large center aligned">
-                    Courses
+                    Projects
                 </div>
                 <div class="content">
                     <div class="ui projectsCardsContainer">
+                        <div class="ui raised card j_card course_c">
+
+                            <div class="content">
+                                <div class="ui blue huge left ribbon label proj_title">
+                                    <!-- <a class="ui red right ribbon label">Specs</a> -->
+                                    Desktop Flush
+                                </div>
+                                <div class="ui red inverted left ribbon label">
+                                    Team of 2
+                                </div>
+
+                                <div class="ui justify aligned description" >
+                                    An open source project using electron, to help organize files on the desktop. It splits them in different windows where each is color-coded and is hideable. 
+
+                                    The project was built mainly for macOS.
+                                </div>
+                            </div>
+                            <div class="ui footer">
+                                <a href="https://github.com/ngopee/desktopFlush" target="_blank"> <i class="fab fa-youtube fa-4x"></i> </a>
+                            </div>
+                        </div>
+
+                        <div class="ui raised card j_card course_c">
+
+                            <div class="content">
+                                <div class="ui blue huge left ribbon label proj_title">
+                                    <!-- <a class="ui red right ribbon label">Specs</a> -->
+                                    Summer-house Rent System
+                                </div>
+                                <div class="ui red inverted left ribbon label">
+                                    Solo
+                                </div>
+
+                                <div class="ui justify aligned description" >
+                                    The client wanted a booking system with variable prices for different dates and different houses with no back-end involved.
+
+                                    I built the system using JavaScript. Prices were fetched from JSON file depending on selected date and availability.
+
+                                    Using date picker and tinkering the clickable days I achieved the availability condition.
+                                </div>
+                            </div>
+
+                        </div>
+
                         <div class="ui raised card j_card course_c">
 
                             <div class="content">
@@ -249,7 +348,7 @@
                                 </div>
                             </div>
                             <div class="ui footer">
-                                <a href="https://www.youtube.com/watch?v=5wUMAo4AXUQ" target="_blank"> <i class="fab fa-youtube fa-4x"></i> </a>
+                                <a href="https://www.youtube.com/watch?v=5wUMAo4AXUQ" target="_blank"> <i class="fab fa-github fa-4x"></i> </a>
                             </div>
                         </div>
                         <div class="ui raised card j_card course_c">
@@ -457,6 +556,85 @@
 
             </div>
 
+            <div class="ui modal workModal">
+                <i class='close icon'></i>
+                <div class="ui header large center aligned">
+                    Work
+                </div>
+
+                <div class="content">
+                    <div class="ui projectsCardsContainer">
+                        <div class="ui raised card j_card">
+                            <div class="content">
+                                <div class="ui blue huge left ribbon label proj_title">
+                                    Freelance Toptal Developer
+                                </div>
+
+                                <div class="ui justify aligned description" >
+                                    Joined the Toptal network
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui raised card j_card">
+                            <div class="content">
+                                <div class="ui blue huge left ribbon label proj_title">
+                                    Kiddy
+                                </div>
+                                <div class="ui red left ribbon label">
+                                    Technical Lead/Co-founder
+                                </div>
+                                <div class="ui justify aligned description" >
+                                    <ul>
+                                        <li>Designed system architecture with the client-driven process as we were working closely with a customer. <br> </li>
+                                        <li>Building the mobile application using React Native for better support of iOS and Android. <br> </li>
+                                        <li>Built the system handling multiple updates and insertions to keep the system up-to date with the latest data while keeping the keeping the experience as smooth as possible. </li>
+                                        <li>Testing the application rigorously to ensure the successful integration of the different components of the application. </li>
+                                        <li>Hosted the application on Amazon Lightsail and published it to the different stores. <br> </li>
+                                    </ul>
+                                   
+                                    <b> Technologies: </b> RoR, Postgresql, React Native, Expo
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                         <div class="ui raised card j_card">
+                            <div class="content">
+                                <div class="ui blue huge left ribbon label proj_title">
+                                    Inpleo
+                                </div>
+                                <div class="ui red left ribbon label">
+                                    Full-Stack Web developer
+                                </div>
+                                <div class="ui justify aligned description" >
+                                    <ul>
+                                        <li>Improved the system architecture by refactoring code.  </li>
+                                        <li> Redesigned the database for multi-tenancy.</li>
+                                        <li>Worked on the app’s back-end and front-end for a better performance through pagination and reduced calls while making  </li>
+                                        <li>sure it did not regress through testing. </li>
+                                        <li>Developing an interactive analytics dashboard for a business intelligence engine.  </li>
+                                        <li>Built different python scripts to help understand the data.  </li>
+                                            
+                                    </ul>
+                                    
+                                    
+                                    <b> Technologies: </b> Ruby on Rails, Postgresql, jQuery flot chart, javascript, python
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
         </div>
 
 
@@ -465,18 +643,10 @@
     <script>
         (function() {
 
-            var lastScrollTop = 0;
 
-            $.fn.isInViewport = function() {
-                var elementTop = $(this).offset().top;
-                var elementBottom = elementTop + $(this).outerHeight();
-
-                var viewportTop = $(window).scrollTop();
-                var viewportBottom = viewportTop + $(window).height();
-
-                return elementBottom > viewportTop && elementTop < viewportBottom;
-            };
-
+            $("#workCollection").click(function(){
+                    ($(".ui.modal.workModal").modal({blurring: true, duration: 100}).modal('setting', 'transition', 'zoom').modal('show'));
+            })
 
             $("#coursesCollection").click(function(){
                     ($(".ui.modal.coursesModal").modal({blurring: true, duration: 100}).modal('setting', 'transition', 'zoom').modal('show'));
@@ -490,54 +660,8 @@
                 ($(".ui.modal.hackathonModal").modal({blurring: true, duration: 100}).modal('setting', 'transition', 'zoom').modal('show'));
             })
 
-            // $(document).on('scroll', function(x) {
-            //     var st = $(this).scrollTop();
-            //     console.log(st,lastScrollTop);
-            //    if (st > lastScrollTop){
-            //        // downscroll code
-            //        if ($("#work_page").isInViewport()){
-            //            $('html, body').animate({
-            //                 scrollTop: $("#about_me_page").offset().top
-            //             }, 1);
-            //        }
-            //    } else {
-            //       // upscroll code
-            //
-            //       if ($("#about_me_page").isInViewport()){
-            //           $('html, body').animate({
-            //                scrollTop: $("#work_page").offset().top
-            //            }, 1);
-            //       }
-            //    }
-            //     lastScrollTop = st;
-            //
-            // });
-            selected = 0;
 
-            var pageSelected = $("#about_link");
 
-            $("#click").on('click', function(){
-                var cards = $(".course_c");
-                $.each(cards, function(i){
-                    console.log(cards);
-                    console.log($(cards[i]));
-                    if ($(cards[i]).isInView_width() == false){
-                        console.log(i);
-                        cards[i].style.opacity = "0.5";
-                    }
-                })
-            });
-
-            $(".item_l").on("click", function(){
-
-                pageSelected.toggleClass("active");
-                $(this).toggleClass("active");
-                pageSelected = $(this);
-
-            })
-
-            // $("#work").dimmer({on: "click", duration: 400, transition: "zoom"});
-            $('.menu').localScroll({duration:600});
         } )();
 
 
@@ -783,6 +907,59 @@
     	root.size = recurse(root);
     	return nodes;
     }
+
+
+
+
+    </script>
+
+
+    <script>
+        var lastScrollTop = 0;
+
+        $.fn.isInViewport = function() {
+            var elementTop = $(this).offset().top;
+            var elementBottom = elementTop + $(this).outerHeight();
+
+            var viewportTop = $(window).scrollTop();
+            var viewportBottom = viewportTop + $(window).height();
+
+            return elementBottom > viewportTop && elementTop < viewportBottom;
+        };
+        selected = 0;
+
+
+        $("#click").on('click', function(){
+            var cards = $(".course_c");
+            $.each(cards, function(i){
+                console.log(cards);
+                console.log($(cards[i]));
+                if ($(cards[i]).isInView_width() == false){
+                    console.log(i);
+                    cards[i].style.opacity = "0.5";
+                }
+            })
+        });
+
+
+        var pageSelected = $("#about_link");
+
+        $(".item_l").on("click", function(){
+            pageSelected.toggleClass("active");
+            $(this).toggleClass("active");
+            pageSelected = $(this);
+
+        })
+
+        // $("#work").dimmer({on: "click", duration: 400, transition: "zoom"});
+        $('.menu').localScroll({duration:600});
+
+
+        var currPage = 0;
+        pages = ["#about_me_page", "#work_page", "#skills_page"];
+        var lastScrollTop = 0;
+        var mainT = 0
+
 
     </script>
 
