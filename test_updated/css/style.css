@@ -109,14 +109,28 @@ body{
   
   width: 270px;
   height: 290px;
-  border-radius: 130;
+  border-radius: 130px;
   object-fit:cover;
-  align-self: center;
+  align-self: flex-end;
   justify-self: flex-end;
   margin-left: 100px;
-  margin-top: -200px;
+  margin-bottom: 30px;
 
 }
+
+#contactDetails{
+  text-align: center;
+  padding-left: 95px;
+}
+
+.icon{
+  padding-left: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
 
 #about_me_text{
 
