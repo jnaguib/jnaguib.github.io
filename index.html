@@ -2,6 +2,9 @@
  	<head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.0/dist/semantic.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
@@ -11,6 +14,8 @@
         <script src="http://cdn.jsdelivr.net/npm/jquery.localscroll@2.0.0/jquery.localScroll.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.0/dist/semantic.min.js"></script>
         <script src="http://d3js.org/d3.v2.min.js?2.9.6"></script>
+
+        <script src="./js/owl.carousel.min.js"></script>
 
     </head>
  	<body>
@@ -28,7 +33,7 @@
                 <h1 class="title"> About me  </h1>
                 <div>
                     <img class="ui column circular image middle aligned" id="john_pic"  src="img/me.jpg">
-                    
+
                     <div id="contactDetails">
                         <a class="icon" href="mailto:john.m.naguib@gmail.com">
                             <i class="fas fa-envelope fa-3x" aria-hidden="true"></i>
@@ -38,7 +43,7 @@
                         </a>
                         <a class="icon" href="https://github.com/jnaguib">
                             <i class="fab fa-github-alt fa-3x"></i>
-                            
+
                         </a>
                     </div>
 
@@ -48,7 +53,7 @@
                     In my last year in university, I grew an interest in web app develpoment and being one of the first employees in different start-ups gave me great experience to build large systems which recently led me to co-found Kiddy. These experiences made me comfortable working on large-scale web applications and smartphone applications using React Native. <br>
 
 
-<!--                
+<!--
 
 
                     I am John Mikhail, a computer science graduate from Carnegie Mellon University, class of 2016 minoring in Robotics.
@@ -302,181 +307,180 @@
                     Projects
                 </div>
                 <div class="content">
-                    <div class="ui projectsCardsContainer">
-                        <div class="ui raised card j_card course_c">
+                    <div class="ui owl-carousel projectsCardsContainer">
 
-                            <div class="content">
-                                <div class="ui blue huge left ribbon label proj_title">
-                                    <!-- <a class="ui red right ribbon label">Specs</a> -->
-                                    Desktop Flush
+                            <div class="ui raised card j_card course_c">
+                                <div class="content">
+                                    <div class="ui blue huge left ribbon label proj_title">
+                                        <!-- <a class="ui red right ribbon label">Specs</a> -->
+                                        Desktop Flush
+                                    </div>
+                                    <div class="ui red inverted left ribbon label">
+                                        Team of 2
+                                    </div>
+
+                                    <div class="ui justify aligned description" >
+                                        An open source project using electron, to help organize files on the desktop. It splits them in different windows where each is color-coded and is hideable.
+                                        The project was built mainly for macOS.
+                                    </div>
                                 </div>
-                                <div class="ui red inverted left ribbon label">
-                                    Team of 2
-                                </div>
-
-                                <div class="ui justify aligned description" >
-                                    An open source project using electron, to help organize files on the desktop. It splits them in different windows where each is color-coded and is hideable. 
-
-                                    The project was built mainly for macOS.
-                                </div>
-                            </div>
-                            <div class="ui footer">
-                                <a href="https://github.com/ngopee/desktopFlush" target="_blank"> <i class="fab fa-youtube fa-4x"></i> </a>
-                            </div>
-                        </div>
-
-                        <div class="ui raised card j_card course_c">
-
-                            <div class="content">
-                                <div class="ui blue huge left ribbon label proj_title">
-                                    <!-- <a class="ui red right ribbon label">Specs</a> -->
-                                    Summer-house Rent System
-                                </div>
-                                <div class="ui red inverted left ribbon label">
-                                    Solo
-                                </div>
-
-                                <div class="ui justify aligned description" >
-                                    The client wanted a booking system with variable prices for different dates and different houses with no back-end involved.
-
-                                    I built the system using JavaScript. Prices were fetched from JSON file depending on selected date and availability.
-
-                                    Using date picker and tinkering the clickable days I achieved the availability condition.
+                                <div class="ui footer">
+                                    <a href="https://github.com/ngopee/desktopFlush" target="_blank"> <i class="fab fa-youtube fa-4x"></i> </a>
                                 </div>
                             </div>
 
-                        </div>
+                            <div class="ui raised card j_card course_c">
 
-                        <div class="ui raised card j_card course_c">
+                                <div class="content">
+                                    <div class="ui blue huge left ribbon label proj_title">
+                                        <!-- <a class="ui red right ribbon label">Specs</a> -->
+                                        Summer-house Rent System
+                                    </div>
+                                    <div class="ui red inverted left ribbon label">
+                                        Solo
+                                    </div>
 
-                            <div class="content">
-                                <div class="ui blue huge left ribbon label proj_title">
-                                    <!-- <a class="ui red right ribbon label">Specs</a> -->
-                                    Python Fruit Ninja
-                                </div>
-                                <div class="ui red inverted left ribbon label">
-                                    Solo
+                                    <div class="ui justify aligned description" >
+                                        The client wanted a booking system with variable prices for different dates and different houses with no back-end involved.
+
+                                        I built the system using JavaScript. Prices were fetched from JSON file depending on selected date and availability.
+
+                                        Using date picker and tinkering the clickable days I achieved the availability condition.
+                                    </div>
                                 </div>
 
-                                <div class="ui justify aligned description" >
-                                    During my Freshman year, I made a Fruit ninja like game using Python. It was my 15-112 course project.
-                                    The game is played using the mouse where you click and hold to cut the fruits. It has some added features
-                                     like different levels and continue from the highest level you reached. As you pass more levels,
-                                     the difficulty of the game increases.
-                                </div>
                             </div>
-                            <div class="ui footer">
-                                <a href="https://www.youtube.com/watch?v=5wUMAo4AXUQ" target="_blank"> <i class="fab fa-github fa-4x"></i> </a>
-                            </div>
-                        </div>
-                        <div class="ui raised card j_card course_c">
-                            <div class="content">
-                                <div class="ui blue huge left ribbon label proj_title">
-                                    Hala-See Hala-Do
-                                </div>
-                                <div class="ui red left ribbon label">
-                                    Team of 3
-                                </div>
-                                <div class="ui justify aligned description" >
-                                    This project was for Perceptual Computing class.
-                            It is based on Hala; a robot-receptionist in CMU-Q.
-                             We used Intel SDK with the Creative camera for voice commands and face detection. The robot answers
-                            specific questions asked using the voice commands and reply using voice synthesis.  Facial expressions
-                             were implemented on an animated face responding to some of the
-                            interlocutor's facial expressions like smiling and nodding back for enhancing Human Robot Interaction.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui raised card j_card course_c">
-                            <div class="content">
-                                <div class="ui blue huge left ribbon label proj_title">
-                                    Twitter Sentiment Analysis
-                                </div>
-                                <div class="ui red left ribbon label">
-                                    Solo
-                                </div>
-                                <div class="ui justify aligned description" >
-                                    This project was for Introduction to Text-Processing course. The sentiment analyzer is trained
-                                     with thousands of tweets for positive, neutral or negative. Using naive Bayes method
-                                      and lib-SVM, it predicts if the tweets are positive, neutral or negative. Various features were implemented
-                                      like checking for positive or negative words in the tweet, It also checks for emoticons
-                                      (":)", ":D", ":(", ":S"...etc), and for all caps words. Another essential feature
-                                       is the existence of "not" before a positive or a negative word which could change the positivity or negativity of the tweet.
-                                </div>
-                            </div>
-                            <div class="ui footer">
-                                <a href="https://github.com/jnaguib/Twitter-Sentiment-Analysis-Intro-to-Text-Processing-" target="_blank"> <i class="fab fa-github fa-4x"></i> </a>
-                            </div>
-                        </div>
-                        <div class="ui raised card j_card course_c">
-                            <div class="content">
-                                <div class="ui blue huge left ribbon label proj_title">
-                                    Hand controlled robot car
-                                </div>
-                                <div class="ui red left ribbon label">
-                                    Team of 2
-                                </div>
-                                <div class="ui justify aligned description" >
-                                    This was a project for Embedded Systems course. My project was to build a system to control a robot car wirelessly using
-                                     a glove that the user wear. Flex sensors attached to the glove were used to detect the bending of the fingers and then data
-                                      was analyzed on the board and signal was sent using Xbee to the robot car. The car will then move based on the signal it received,
-                                      either forward, backward, left or right. If no fingers were bent a stop signal is sent and the car stops.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="ui raised card j_card course_c">
-                            <div class="content">
-                                <div class="ui blue huge left ribbon label proj_title">
-                                    3D chat
-                                </div>
-                                <div class="ui red left ribbon label">
-                                    Team of 3
-                                </div>
-                                <div class="ui justify aligned description" >
-                                    This was a project for Webapp Development course. We introduced a new chat room experience using a 3D Face that blinks,
-                                    talk and move lips on talking. Not only that, but the face also tracks the user's face and tilt towards it. A user can
-                                     type or speak and send to the other user in their language (English, French).
 
-                                </div>
-                            </div>
-                            <div class="ui footer">
-                                <a href="https://testthreed-chat.herokuapp.com/" target="_blank"> Try App </a>
-                                <a href="https://github.com/jnaguib/ThreeD-Chat" target="_blank"> <i class="fab fa-github fa-4x"></i> </a>
-                            </div>
-                        </div>
-                        <div class="ui raised card j_card course_c">
-                            <div class="content">
-                                <div class="ui blue huge left ribbon label proj_title">
-                                    Video CDN
-                                </div>
-                                <div class="ui red left ribbon label">
-                                    Team of 2
-                                </div>
-                                <div class="ui justify aligned description" >
-                                This was a project for Introduction to Networks (15-441). We implemented adaptive bitrate selection and DNS load balancing
-                                and some parts of OSPF for a video content distribution network. After measuring the time it took to send a chunk of the video,
-                                 we adaptively send the other chunks (higher or lower bitrate based on the connection).
-                                </div>
-                            </div>
-                        </div>
+                            <div class="ui raised card j_card course_c">
 
-                        <div class="ui raised card j_card course_c">
+                                <div class="content">
+                                    <div class="ui blue huge left ribbon label proj_title">
+                                        <!-- <a class="ui red right ribbon label">Specs</a> -->
+                                        Python Fruit Ninja
+                                    </div>
+                                    <div class="ui red inverted left ribbon label">
+                                        Solo
+                                    </div>
 
-                            <div class="content">
-
-                                <div class="ui blue huge left ribbon label proj_title">
-                                    Bittorrent-like with Congestion Control
+                                    <div class="ui justify aligned description" >
+                                        During my Freshman year, I made a Fruit ninja like game using Python. It was my 15-112 course project.
+                                        The game is played using the mouse where you click and hold to cut the fruits. It has some added features
+                                         like different levels and continue from the highest level you reached. As you pass more levels,
+                                         the difficulty of the game increases.
+                                    </div>
                                 </div>
-                                <div class="ui red left ribbon label">
-                                    Team of 2
-                                </div>
-                                <div class="ui justify aligned description" >
-                                    This was a project for Introduction to Networks (15-441). We implemented a file transfer application like Bittorent,
-                                    It runs on top of UDP with Congestion Control and reliability concepts from TCP.
-                                    The system can simultaneously download different chunks of the file from different clients.
+                                <div class="ui footer">
+                                    <a href="https://www.youtube.com/watch?v=5wUMAo4AXUQ" target="_blank"> <i class="fab fa-github fa-4x"></i> </a>
                                 </div>
                             </div>
-                        </div>
+                            <div class="ui raised card j_card course_c">
+                                <div class="content">
+                                    <div class="ui blue huge left ribbon label proj_title">
+                                        Hala-See Hala-Do
+                                    </div>
+                                    <div class="ui red left ribbon label">
+                                        Team of 3
+                                    </div>
+                                    <div class="ui justify aligned description" >
+                                        This project was for Perceptual Computing class.
+                                It is based on Hala; a robot-receptionist in CMU-Q.
+                                 We used Intel SDK with the Creative camera for voice commands and face detection. The robot answers
+                                specific questions asked using the voice commands and reply using voice synthesis.  Facial expressions
+                                 were implemented on an animated face responding to some of the
+                                interlocutor's facial expressions like smiling and nodding back for enhancing Human Robot Interaction.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui raised card j_card course_c">
+                                <div class="content">
+                                    <div class="ui blue huge left ribbon label proj_title">
+                                        Twitter Sentiment Analysis
+                                    </div>
+                                    <div class="ui red left ribbon label">
+                                        Solo
+                                    </div>
+                                    <div class="ui justify aligned description" >
+                                        This project was for Introduction to Text-Processing course. The sentiment analyzer is trained
+                                         with thousands of tweets for positive, neutral or negative. Using naive Bayes method
+                                          and lib-SVM, it predicts if the tweets are positive, neutral or negative. Various features were implemented
+                                          like checking for positive or negative words in the tweet, It also checks for emoticons
+                                          (":)", ":D", ":(", ":S"...etc), and for all caps words. Another essential feature
+                                           is the existence of "not" before a positive or a negative word which could change the positivity or negativity of the tweet.
+                                    </div>
+                                </div>
+                                <div class="ui footer">
+                                    <a href="https://github.com/jnaguib/Twitter-Sentiment-Analysis-Intro-to-Text-Processing-" target="_blank"> <i class="fab fa-github fa-4x"></i> </a>
+                                </div>
+                            </div>
+                            <div class="ui raised card j_card course_c">
+                                <div class="content">
+                                    <div class="ui blue huge left ribbon label proj_title">
+                                        Hand controlled robot car
+                                    </div>
+                                    <div class="ui red left ribbon label">
+                                        Team of 2
+                                    </div>
+                                    <div class="ui justify aligned description" >
+                                        This was a project for Embedded Systems course. My project was to build a system to control a robot car wirelessly using
+                                         a glove that the user wear. Flex sensors attached to the glove were used to detect the bending of the fingers and then data
+                                          was analyzed on the board and signal was sent using Xbee to the robot car. The car will then move based on the signal it received,
+                                          either forward, backward, left or right. If no fingers were bent a stop signal is sent and the car stops.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui raised card j_card course_c">
+                                <div class="content">
+                                    <div class="ui blue huge left ribbon label proj_title">
+                                        3D chat
+                                    </div>
+                                    <div class="ui red left ribbon label">
+                                        Team of 3
+                                    </div>
+                                    <div class="ui justify aligned description" >
+                                        This was a project for Webapp Development course. We introduced a new chat room experience using a 3D Face that blinks,
+                                        talk and move lips on talking. Not only that, but the face also tracks the user's face and tilt towards it. A user can
+                                         type or speak and send to the other user in their language (English, French).
+
+                                    </div>
+                                </div>
+                                <div class="ui footer">
+                                    <a href="https://testthreed-chat.herokuapp.com/" target="_blank"> Try App </a>
+                                    <a href="https://github.com/jnaguib/ThreeD-Chat" target="_blank"> <i class="fab fa-github fa-4x"></i> </a>
+                                </div>
+                            </div>
+                            <div class="ui raised card j_card course_c">
+                                <div class="content">
+                                    <div class="ui blue huge left ribbon label proj_title">
+                                        Video CDN
+                                    </div>
+                                    <div class="ui red left ribbon label">
+                                        Team of 2
+                                    </div>
+                                    <div class="ui justify aligned description" >
+                                    This was a project for Introduction to Networks (15-441). We implemented adaptive bitrate selection and DNS load balancing
+                                    and some parts of OSPF for a video content distribution network. After measuring the time it took to send a chunk of the video,
+                                     we adaptively send the other chunks (higher or lower bitrate based on the connection).
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ui raised card j_card course_c">
+
+                                <div class="content">
+
+                                    <div class="ui blue huge left ribbon label proj_title">
+                                        Bittorrent-like with Congestion Control
+                                    </div>
+                                    <div class="ui red left ribbon label">
+                                        Team of 2
+                                    </div>
+                                    <div class="ui justify aligned description" >
+                                        This was a project for Introduction to Networks (15-441). We implemented a file transfer application like Bittorent,
+                                        It runs on top of UDP with Congestion Control and reliability concepts from TCP.
+                                        The system can simultaneously download different chunks of the file from different clients.
+                                    </div>
+                                </div>
+                            </div>
 
                     </div>
                 </div>
@@ -489,7 +493,7 @@
                     Research
                 </div>
                 <div class="content">
-                    <div class="ui projectsCardsContainer">
+                    <div class="ui owl-carousel projectsCardsContainer">
                         <div class="ui raised card j_card">
                             <div class="content">
                                 <div class="ui blue huge left ribbon label proj_title">
@@ -532,7 +536,7 @@
                 </div>
 
                 <div class="content">
-                    <div class="ui projectsCardsContainer">
+                    <div class="ui owl-carousel projectsCardsContainer">
                         <div class="ui raised card j_card">
                             <div class="content">
                                 <div class="ui blue huge left ribbon label proj_title">
@@ -581,7 +585,7 @@
                 </div>
 
                 <div class="content">
-                    <div class="ui projectsCardsContainer">
+                    <div class="ui owl-carousel projectsCardsContainer">
                         <div class="ui raised card j_card">
                             <div class="content">
                                 <div class="ui blue huge left ribbon label proj_title">
@@ -611,7 +615,7 @@
                                         <li>Testing the application rigorously to ensure the successful integration of the different components of the application. </li>
                                         <li>Hosted the application on Amazon Lightsail and published it to the different stores. <br> </li>
                                     </ul>
-                                   
+
                                     <b> Technologies: </b> RoR, Postgresql, React Native, Expo
 
                                 </div>
@@ -620,7 +624,7 @@
 
                         </div>
 
-                         <div class="ui raised card j_card">
+                        <div class="ui raised card j_card">
                             <div class="content">
                                 <div class="ui blue huge left ribbon label proj_title">
                                     Inpleo
@@ -636,16 +640,16 @@
                                         <li>sure it did not regress through testing. </li>
                                         <li>Developing an interactive analytics dashboard for a business intelligence engine.  </li>
                                         <li>Built different python scripts to help understand the data.  </li>
-                                            
+
                                     </ul>
-                                    
-                                    
+
+
                                     <b> Technologies: </b> Ruby on Rails, Postgresql, jQuery flot chart, javascript, python
                                 </div>
 
                             </div>
-                            
-                        </div>
+
+                         </div>
 
 
                     </div>
@@ -676,7 +680,23 @@
 
             $("#hackathonCollection").click(function(){
                 ($(".ui.modal.hackathonModal").modal({blurring: true, duration: 100}).modal('setting', 'transition', 'zoom').modal('show'));
-            })
+            });
+
+             $(".owl-carousel").owlCarousel({
+                center: true,
+                items: 2,
+                loop: false,
+                margin: 20,
+                autoWidth: false,
+                dots: true,
+                dotsEach: true,
+
+                // responsive:{
+                //     600:{
+                //         items:3
+                //     }
+                // }
+             });
 
 
 

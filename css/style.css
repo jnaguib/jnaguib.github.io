@@ -18,7 +18,7 @@ body{
   background-color: #212121;
   color: #eee;
   display: flex;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 #menuCollection{
@@ -106,7 +106,7 @@ body{
 /*  min-width: 200px;
   max-width: 250px;
   max-height: 180px;*/
-  
+
   width: 270px;
   height: 290px;
   border-radius: 130px;
@@ -188,7 +188,9 @@ body{
 
 .ui.modal{
   width: 80%;
-  
+  position: absolute;
+  top: 100px;
+  left: 10%;
 }
 
 .ui.modal>.header{
@@ -282,18 +284,23 @@ body{
   opacity: 0.6;
 }
 
-.ui.card.j_card:first-child{
-  margin-left: 30px;
+.card.j_card:first-child{
+  /* margin-left: 30px; */
+}
+
+.card>.j_card:last-child{
+  padding-right: 50px;
+  background-color: red;
 }
 
 .ui.card.j_card{
-  width: 350px;
+  width: 400px;
   height: 400px;
   white-space: normal;
-  margin-right: 30px;
-  display: inline-flex;
+  /* margin-right: 50px; */
+  /* display: inline-flex; */
   /* overflow-x: auto; */
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .ui.ribbon.label{
@@ -347,7 +354,7 @@ body{
 }
 
 .ui.projectsCardsContainer{
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
   white-space: nowrap;
   padding: 10px;
 }
@@ -382,4 +389,13 @@ line.link {
 	fill: none;
 	stroke: #34495e;
 	stroke-width: 1.5px;
+}
+
+
+.owl-item{
+  opacity: 0.5;
+}
+
+.owl-item.active.center{
+  opacity: 1;
 }
